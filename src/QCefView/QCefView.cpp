@@ -36,7 +36,7 @@ public:
 		window_info.SetAsChild((HWND)pCefWindow_->winId(), rc);
 
 		CefBrowserSettings browserSettings;
-		browserSettings.plugins = STATE_DISABLED;	// disable all plugins
+		browserSettings.plugins = STATE_DEFAULT;	// disable all plugins
 
 		//
 		pQCefViewHandler_ = new QCefViewBrowserHandler(pCefWindow_);

@@ -55,6 +55,6 @@
 #define RENDER_PROCESS_NAME				"qtcefwing.exe"
 #define RESOURCE_DIRECTORY_NAME			"resources"
 #define LOCALES_DIRECTORY_NAME			"locales"
-#define QCEF_USER_AGENT					"QCefView/1.0 (Windows; en-us)"
+#define QCEF_USER_AGENT					"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
 
 #endif

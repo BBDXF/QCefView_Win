@@ -26,11 +26,13 @@ void QCefViewBrowserApp::OnBeforeCommandLineProcessing(
 	CefRefPtr<CefCommandLine> command_line)
 {
 	command_line->AppendSwitch("disable-spell-checking");
-	command_line->AppendSwitch("disable-extensions");
+	//command_line->AppendSwitch("disable-extensions");
 	command_line->AppendSwitch("disable-pdf-extension");
 	command_line->AppendSwitch("enable-direct-write");
 	command_line->AppendSwitch("allow-file-access-from-files");
 	command_line->AppendSwitchWithValue("renderer-process-limit", "1");
+	command_line->AppendSwitch("--disable-web-security");//关闭同源策略
+	command_line->AppendSwitch("--enable-system-flash");//使用系统flash
 }
 
 void QCefViewBrowserApp::OnRegisterCustomSchemes(
