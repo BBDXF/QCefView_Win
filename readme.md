@@ -83,7 +83,7 @@ CCefWindow::CCefWindow(QWindow *parent /*= 0*/)
 `CCefManager::getInstance().initializeCef();`才是对CEF真正的初始化者。  
 
 # 其他
-编译方式同原版。代码上没有做任何更改。
+编译方式同原版。
 工具：Qt5+VS2015
 
 # 启用Flash
